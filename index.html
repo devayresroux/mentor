@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentoria</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Mentoria</h1>
+        <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+      </header>
+
+      <main>
+        <form>
+          <div class="fieldset-group">
+            <fieldset>
+              <legend>Informações pessoais</legend>
+
+              <div class="fields-group">
+                <div class="field-group">
+                  <label for="form-name">Nome</label>
+                  <input type="text" id="form-name" />
+                </div>
+
+                <div class="field-group">
+                  <label for="form-lastname">Sobrenome</label>
+                  <input type="text" id="form-lastname" />
+                </div>
+              </div>
+
+              <div class="fields-group">
+                <div class="field-group">
+                  <label for="form-email">
+                    Email
+                    <span>(mínimo de 6 caracteres)</span>
+                  </label>
+                  <input type="email" id="form-email" />
+                </div>
+              </div>
+
+              <div class="fields-group">
+                <div class="field-group">
+                  <label for="form-password">
+                    Senha
+                    <span>(mínimo de 6 caracteres)</span>
+                  </label>
+                  <input type="password" id="form-password" />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Informações do mentor</legend>
+
+              <div class="fields-group">
+                <div class="field-group">
+                  <label for="form-mentor-name">
+                    Nome do seu mentor
+                    <span>(só o primeiro nome)</span>
+                  </label>
+                  <input type="text" id="form-mentor-name" />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Seus horários disponíveis</legend>
+
+              <strong class="form-subtitle">Primeira mentoria</strong>
+
+              <div class="fields-group">
+                <div class="field-group">
+                  <label for="form-mentor-name">
+                    Data
+                    <span>(DD/MM/AAAA)</span>
+                  </label>
+                  <input type="date" id="form-date" />
+                </div>
+
+                <div class="fields-group">
+                  <div class="field-group">
+                    <label for="form-begin">Das</label>
+                    <input type="time" id="form-begin" />
+                  </div>
+
+                  <div class="field-group">
+                    <label for="form-end">Ate</label>
+                    <input type="time" id="form-end" />
+                  </div>
+                </div>
+              </div>
+
+              <strong class="form-subtitle">Segunda mentoria</strong>
+
+              <div class="fields-group">
+                <div class="field-group">
+                  <label for="form-mentor-name">
+                    Data
+                    <span>(DD/MM/AAAA)</span>
+                  </label>
+                  <input type="date" id="form-date" />
+                </div>
+
+                <div class="fields-group">
+                  <div class="field-group">
+                    <label for="form-begin">Das</label>
+                    <input type="time" id="form-begin" />
+                  </div>
+
+                  <div class="field-group">
+                    <label for="form-end">Ate</label>
+                    <input type="time" id="form-end" />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="buttons-group">
+            <button>Salvar</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
